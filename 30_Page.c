@@ -24,7 +24,8 @@ int main()
 	return 0;
 }
 
-int getline_( char s[], int limit ){
+int getline_( char s[], int limit )
+{/* read a line into s, return length */
 	int i = 0;
 	char c;
 	for(i; i < limit-1 && (c = getchar()) != EOF && c != '\n'; ++i)/* ' is better than ", " causing a waring : comparion of poiter to integer */
